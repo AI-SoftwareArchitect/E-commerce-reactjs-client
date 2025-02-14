@@ -1,0 +1,33 @@
+/* src/index.css */
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animate-gradient {
+  background-size: 300% 300%;
+  animation: gradientAnimation 5s ease infinite;
+}
+
+/* Animasyon ve stil */
+@keyframes slideIn {
+  0% {
+    transform: translateY(100px); /* Alt taraftan başlasın */
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0); /* Kayarak yerini bulsun */
+    opacity: 1;
+  }
+}
+
+.animate-slideIn {
+  animation: slideIn 0.5s ease-out; /* Yavaşça kayarak geçiş */
+}
